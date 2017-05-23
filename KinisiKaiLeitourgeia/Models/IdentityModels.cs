@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using KinisiKaiLeitourgeia.Models.People;
 
 namespace KinisiKaiLeitourgeia.Models
 {
@@ -20,6 +21,7 @@ namespace KinisiKaiLeitourgeia.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Person> People { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
