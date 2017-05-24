@@ -8,7 +8,7 @@ namespace KinisiKaiLeitourgeia.Models.Dictionaries
 {
     public class TypeAppointment
     {
-        public int Id { get; set; }
+        public byte Id { get; set; }
 
         [Required]
         [Display(Name = "Είδος Ραντεβού")]

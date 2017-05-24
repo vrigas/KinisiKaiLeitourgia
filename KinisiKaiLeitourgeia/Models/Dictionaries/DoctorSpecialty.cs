@@ -8,7 +8,7 @@ namespace KinisiKaiLeitourgeia.Models.Dictionaries
 {
     public class DoctorSpecialty
     {
-        public int Id;
+        public byte Id { get; set; }
 
         [Required]
         [StringLength(50)]

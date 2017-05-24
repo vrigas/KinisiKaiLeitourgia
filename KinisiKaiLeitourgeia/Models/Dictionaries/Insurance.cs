@@ -8,7 +8,7 @@ namespace KinisiKaiLeitourgeia.Models.Dictionaries
 {
     public class Insurance
     {
-        public int Id { get; set; }
+        public byte Id { get; set; }
 
         [Required]
         [StringLength(50)]

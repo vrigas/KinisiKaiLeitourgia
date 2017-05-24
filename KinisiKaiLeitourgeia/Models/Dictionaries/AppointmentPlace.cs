@@ -8,7 +8,7 @@ namespace KinisiKaiLeitourgeia.Models.Dictionaries
 {
     public class AppointmentPlace
     {
-        public int Id { get; set; }
+        public byte Id { get; set; }
         
         [Required]
         [StringLength(50)]
