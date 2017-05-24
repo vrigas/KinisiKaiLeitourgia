@@ -212,8 +212,14 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Dictionaries\AppointmentPlace.cs" />
+    <Compile Include="Models\Dictionaries\DoctorSpecialty.cs" />
+    <Compile Include="Models\Dictionaries\DoctorWorkplace.cs" />
+    <Compile Include="Models\Dictionaries\Insurance.cs" />
+    <Compile Include="Models\Dictionaries\TypeAppointment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\People\Patient.cs" />
     <Compile Include="Models\People\Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
