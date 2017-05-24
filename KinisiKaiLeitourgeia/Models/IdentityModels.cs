@@ -5,6 +5,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using KinisiKaiLeitourgeia.Models.People;
 using KinisiKaiLeitourgeia.Models.Dictionaries;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace KinisiKaiLeitourgeia.Models
 {
@@ -28,9 +29,19 @@ namespace KinisiKaiLeitourgeia.Models
         public DbSet<DoctorWorkplace> DoctorWorkplaces { get; set; }
         public DbSet<Insurance> Insurances { get; set; }
         public DbSet<TypeAppointment> TypeAppointments { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
+        public DbSet<Parent> Parents { get; set; }
+        public DbSet<Patient> Patients { get; set; }
+        public DbSet<Therapist> Therapists { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
         }
 
         public static ApplicationDbContext Create()

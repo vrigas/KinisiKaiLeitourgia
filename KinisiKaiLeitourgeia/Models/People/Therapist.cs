@@ -6,7 +6,7 @@ using System.Web;
 
 namespace KinisiKaiLeitourgeia.Models.People
 {
-    public class Therapist
+    public class Therapist : Person
     {
         [Display(Name = "Αρ. Αδείας")]
         [StringLength(20)]

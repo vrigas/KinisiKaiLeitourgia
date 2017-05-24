@@ -214,6 +214,14 @@
     <Compile Include="Migrations\201705241825361_ModelDictionaries.Designer.cs">
       <DependentUpon>201705241825361_ModelDictionaries.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705241852265_People.cs" />
+    <Compile Include="Migrations\201705241852265_People.Designer.cs">
+      <DependentUpon>201705241852265_People.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705241902584_DoctorFix.cs" />
+    <Compile Include="Migrations\201705241902584_DoctorFix.Designer.cs">
+      <DependentUpon>201705241902584_DoctorFix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Dictionaries\AppointmentPlace.cs" />
@@ -326,6 +334,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705241825361_ModelDictionaries.resx">
       <DependentUpon>201705241825361_ModelDictionaries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705241852265_People.resx">
+      <DependentUpon>201705241852265_People.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705241902584_DoctorFix.resx">
+      <DependentUpon>201705241902584_DoctorFix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

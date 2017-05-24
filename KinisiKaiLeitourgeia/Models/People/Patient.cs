@@ -31,7 +31,7 @@ namespace KinisiKaiLeitourgeia.Models.People
         [Display(Name = "Κηδεμόνας")]
         public int ParentId { get; set; }
 
-        public Parent Parent { get; set; }
+        public IEnumerable<Parent> Parent { get; set; }
 
     }
 }
