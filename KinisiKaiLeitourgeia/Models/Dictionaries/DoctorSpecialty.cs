@@ -13,6 +13,6 @@ namespace KinisiKaiLeitourgeia.Models.Dictionaries
         [Required]
         [StringLength(50)]
         [Display(Name = "Ειδικότιτα Ιατρού")]
-        public string Name;
+        public string Name { get; set; }
     }
 }

@@ -11,8 +11,8 @@ namespace KinisiKaiLeitourgeia.Models.Dictionaries
         public byte Id { get; set; }
 
         [Required]
-        [Display(Name = "Εργασιακός Φορέας")]
         [StringLength(50)]
+        [Display(Name = "Εργασιακός Φορέας")]
         public string name { get; set; }
     }
 }

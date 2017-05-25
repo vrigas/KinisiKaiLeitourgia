@@ -11,7 +11,7 @@ namespace KinisiKaiLeitourgeia.Models.People
     {
         [Display(Name = "Ειδικότητα Ιατρού")]
         public byte DoctorSpecialtyId { get; set; }
-
+        
         public DoctorSpecialty DoctorSpecialty { get; set; }
 
         [Display(Name = "Εργασιακός Φορέας")]

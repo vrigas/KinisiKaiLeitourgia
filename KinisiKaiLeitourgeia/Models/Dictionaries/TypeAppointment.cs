@@ -11,8 +11,8 @@ namespace KinisiKaiLeitourgeia.Models.Dictionaries
         public byte Id { get; set; }
 
         [Required]
-        [Display(Name = "Είδος Ραντεβού")]
         [StringLength(50)]
+        [Display(Name = "Είδος Ραντεβού")]
         public string Name { get; set; }
     }
 }
