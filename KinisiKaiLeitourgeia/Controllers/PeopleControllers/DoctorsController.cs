@@ -40,8 +40,8 @@ namespace KinisiKaiLeitourgeia.Controllers.PeopleControllers
         // GET: Doctors/Create
         public ActionResult Create()
         {
-            ViewBag.DoctorSpecialtyId = new SelectList(db.DoctorSpecialties, "Id", "Id");
-            ViewBag.DoctorWorkplaceId = new SelectList(db.DoctorSpecialties, "Id", "Id");
+            ViewBag.DoctorSpecialtyId = new SelectList(db.DoctorSpecialties, "Id", "Name");
+            ViewBag.DoctorWorkplaceId = new SelectList(db.DoctorWorkplaces, "Id", "Name");
             return View();
         }
 
