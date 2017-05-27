@@ -6,6 +6,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using KinisiKaiLeitourgeia.Models.People;
 using KinisiKaiLeitourgeia.Models.Dictionaries;
 using System.Data.Entity.ModelConfiguration.Conventions;
+using KinisiKaiLeitourgeia.Models.Appointments;
 
 namespace KinisiKaiLeitourgeia.Models
 {
@@ -33,6 +34,7 @@ namespace KinisiKaiLeitourgeia.Models
         public DbSet<Parent> Parents { get; set; }
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Therapist> Therapists { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

@@ -22,19 +22,19 @@ namespace KinisiKaiLeitourgeia.Migrations
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data. E.g.
             //
-            context.People.AddOrUpdate(
-              p => new { p.Name, p.Surname },
-              new Person { Name = "Andrew", Surname = "Peters" },
-              new Person { Name = "Brice", Surname = "Lambson" },
-              new Person { Name = "Rowan", Surname = "Miller" }
-            );
+            //context.People.AddOrUpdate(
+            //  p => new { p.Name, p.Surname },
+            //  new Person { Name = "Andrew", Surname = "Peters" },
+            //  new Person { Name = "Brice", Surname = "Lambson" },
+            //  new Person { Name = "Rowan", Surname = "Miller" }
+            //);
 
-            context.Database.ExecuteSqlCommand("SET IDENTITY_INSERT DoctorSpecialties ON");
-            context.DoctorSpecialties.AddOrUpdate(
-              p => new { p.Id, p.Name },
-              new DoctorSpecialty { Id = 1, Name = "asd" }
-            );
-            context.Database.ExecuteSqlCommand("SET IDENTITY_INSERT DoctorSpecialties OFF");
+            //context.Database.ExecuteSqlCommand("SET IDENTITY_INSERT DoctorSpecialties ON");
+            //context.DoctorSpecialties.AddOrUpdate(
+            //  p => new { p.Id, p.Name },
+            //  new DoctorSpecialty { Id = 1, Name = "asd" }
+            //);
+            //context.Database.ExecuteSqlCommand("SET IDENTITY_INSERT DoctorSpecialties OFF");
 
         }
     }

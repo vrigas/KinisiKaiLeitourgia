@@ -10,12 +10,12 @@ namespace KinisiKaiLeitourgeia.Models.People
     public class Doctor : Person
     {
         [Display(Name = "Ειδικότητα Ιατρού")]
-        public byte DoctorSpecialtyId { get; set; }
+        public byte? DoctorSpecialtyId { get; set; }
         
         public DoctorSpecialty DoctorSpecialty { get; set; }
 
         [Display(Name = "Εργασιακός Φορέας")]
-        public byte DoctorWorkplaceId { get; set; }
+        public byte? DoctorWorkplaceId { get; set; }
 
         public DoctorSpecialty DoctorWorkplace { get; set; }        
     }

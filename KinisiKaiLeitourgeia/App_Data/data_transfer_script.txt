@@ -1,0 +1,1334 @@
+set IDENTITY_INSERT Insurances ON;
+INSERT INTO Insurances (Id, Name) VALUES (12, N'еопуу');
+INSERT INTO Insurances (Id, Name) VALUES (13, N'иди©тгс');
+INSERT INTO Insurances (Id, Name) VALUES (14, N'ийа');
+INSERT INTO Insurances (Id, Name) VALUES (15, N'оца');
+set IDENTITY_INSERT Insurances OFF;
+
+set IDENTITY_INSERT DoctorSpecialties ON;
+INSERT INTO DoctorSpecialties (Id, Name) VALUES (3, N'паидомеуяок╪цос');
+INSERT INTO DoctorSpecialties (Id, Name) VALUES (4, N'паид╨атяос');
+INSERT INTO DoctorSpecialties (Id, Name) VALUES (5, N'ояхопаидий╪с');
+INSERT INTO DoctorSpecialties (Id, Name) VALUES (6, N'цемий╪с веияо╬яцос');
+INSERT INTO DoctorSpecialties (Id, Name) VALUES (9, N'меуяовеияоуяц╪с');
+INSERT INTO DoctorSpecialties (Id, Name) VALUES (8, N'меуяовеияо╬яцос');
+INSERT INTO DoctorSpecialties (Id, Name) VALUES (10, N'пахок╪цос');
+INSERT INTO DoctorSpecialties (Id, Name) VALUES (11, N'аццеиовеияоуяц╪с');
+INSERT INTO DoctorSpecialties (Id, Name) VALUES (12, N'йаядиок╪цос');
+INSERT INTO DoctorSpecialties (Id, Name) VALUES (13, N'жус╨атяос');
+INSERT INTO DoctorSpecialties (Id, Name) VALUES (14, N'емдойяимок╪цос');
+set IDENTITY_INSERT DoctorSpecialties OFF;
+
+set IDENTITY_INSERT TypeAppointments ON;
+INSERT INTO TypeAppointments (Id, Name) VALUES (6, N'пя©то яамтебо╬');
+INSERT INTO TypeAppointments (Id, Name) VALUES (7, N'аниок╪цгсг');
+INSERT INTO TypeAppointments (Id, Name) VALUES (8, N'епаманиок╪цгсг');
+INSERT INTO TypeAppointments (Id, Name) VALUES (9, N'паяайоко╬хгсг');
+set IDENTITY_INSERT TypeAppointments OFF;
+
+set IDENTITY_INSERT DoctorWorkplaces ON;
+INSERT INTO DoctorWorkplaces (Id, Name) VALUES (4, N'мосойоле╨о');
+INSERT INTO DoctorWorkplaces (Id, Name) VALUES (5, N'иди©тгс');
+INSERT INTO DoctorWorkplaces (Id, Name) VALUES (6, N'йяатий╪с жоя╦ас');
+INSERT INTO DoctorWorkplaces (Id, Name) VALUES (7, N'еопуу');
+INSERT INTO DoctorWorkplaces (Id, Name) VALUES (8, N'идиытий╧ йкимий╧');
+INSERT INTO DoctorWorkplaces (Id, Name) VALUES (9, N'иппойя╒теио');
+INSERT INTO DoctorWorkplaces (Id, Name) VALUES (10, N'авепа');
+INSERT INTO DoctorWorkplaces (Id, Name) VALUES (11, N'папацеыяц╨оу');
+INSERT INTO DoctorWorkplaces (Id, Name) VALUES (12, N'ац.дгл╧тяиос');
+INSERT INTO DoctorWorkplaces (Id, Name) VALUES (13, N'ц. цеммглат╒с');
+INSERT INTO DoctorWorkplaces (Id, Name) VALUES (14, N'папамийок╒оу');
+set IDENTITY_INSERT DoctorWorkplaces OFF;
+
+set IDENTITY_INSERT AppointmentPlaces ON;
+INSERT INTO AppointmentPlaces (Id, Name) VALUES (2, N'й╨мгсгйаикеитоуяц╨а');
+INSERT INTO AppointmentPlaces (Id, Name) VALUES (3, N'йат╢о╨йом');
+INSERT INTO AppointmentPlaces (Id, Name) VALUES (4, N'мосойоле╨о');
+set IDENTITY_INSERT AppointmentPlaces OFF;
+
+
+
+set IDENTITY_INSERT People ON;
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Address, Info, Discriminator, LicenceNumber, AMKA) VALUES (
+					  4, 
+					  N'йуяи╒йос',
+					  N'атлатф╒йгс',
+					  N'2310344907',
+					  N'6947099804',
+					  N'ATMATZ@YAHOO.GR',
+					  N'стад╨оу 14, пам╪яала',
+					  N'',
+					  N'Therapist',
+					  N'',
+					  N''
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Address, Info, Discriminator, LicenceNumber, AMKA) VALUES (
+					  5, 
+					  N'ахгм╒',
+					  N'яо╬йоу',
+					  N'',
+					  N'6955051683',
+					  N'ATHINAROUKOUATHINA@HOTMAIL.COM',
+					  N'дяуос 10, тоулпа',
+					  N'',
+					  N'Therapist',
+					  N'',
+					  N''
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Address, Info, Discriminator, LicenceNumber, AMKA) VALUES (
+					  6, 
+					  N'ки╒ма',
+					  N'лгки©тг',
+					  N'2310346132',
+					  N'6944182771',
+					  N'MILIOTIL@HOL.GR',
+					  N'стад╨оу 14, пам╪яала',
+					  N'',
+					  N'Therapist',
+					  N'',
+					  N''
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Address, Info, Discriminator, LicenceNumber, AMKA) VALUES (
+					  7, 
+					  N'ж©тгс',
+					  N'жыти╒дгс',
+					  N'',
+					  N'6945773598',
+					  N'F.FOTIADIS@MOVEMENTANDFUNCTION.GR',
+					  N' , ',
+					  N'',
+					  N'Therapist',
+					  N'',
+					  N''
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Address, Info, Discriminator, LicenceNumber, AMKA) VALUES (
+					  8, 
+					  N'декж╨мг',
+					  N'пап╒фоцкоу',
+					  N'',
+					  N'6932346387',
+					  N'DELPHINI@OTENET.GR',
+					  N' , ',
+					  N'',
+					  N'Therapist',
+					  N'',
+					  N''
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Address, Info, Discriminator, LicenceNumber, AMKA) VALUES (
+					  9, 
+					  N'спуяос',
+					  N'петсас',
+					  N'',
+					  N'6972513080',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Therapist',
+					  N'',
+					  N''
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Address, Info, Discriminator, LicenceNumber, AMKA) VALUES (
+					  10, 
+					  N'вягстос',
+					  N'фокытас',
+					  N'',
+					  N'',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Therapist',
+					  N'',
+					  N''
+					  );
+set IDENTITY_INSERT People OFF;
+
+set IDENTITY_INSERT People ON;
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  13, 
+					  N'дгл╧тягс',
+					  N'фажеия╨оу',
+					  N'2310241845',
+					  N'',
+					  N'6944330587',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Doctor',
+					  N'9',
+					  N'3'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  14, 
+					  N'диаламтг',
+					  N'екисабет',
+					  N'',
+					  N'',
+					  N'',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Doctor',
+					  N'4',
+					  N'4'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  15, 
+					  N'цеыяциос',
+					  N'йяоусос',
+					  N'',
+					  N'',
+					  N'',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Doctor',
+					  N'4',
+					  N'4'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  16, 
+					  N'вягстос',
+					  N'тсайакидгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Doctor',
+					  N'4',
+					  N'3'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  17, 
+					  N'ахамасиос',
+					  N'еуаццекиоу',
+					  N'',
+					  N'',
+					  N'',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Doctor',
+					  N'4',
+					  N'3'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  28, 
+					  N'мийокаос',
+					  N'ягцопоукос',
+					  N'',
+					  N'2310233664',
+					  N'6948182418',
+					  N'NIREK@OTENET.GR',
+					  N'басикеыс гяайкеиоу , йемтяо',
+					  N'паидоояхопаидийос, ациос коуйас, сумеяцатгс лакифоу памепистглиайо мосойолеио каяисас',
+					  N'Doctor',
+					  N'5',
+					  N'5'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  19, 
+					  N'ливакгс',
+					  N'иысгжидгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Doctor',
+					  N'4',
+					  N'5'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  20, 
+					  N'ахамасиа',
+					  N'цйиолисг',
+					  N'',
+					  N'',
+					  N'',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Doctor',
+					  N'4',
+					  N'4'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  21, 
+					  N'гкиас',
+					  N'ватфгиыаммидгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Doctor',
+					  N'4',
+					  N'4'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  23, 
+					  N'амастасиос',
+					  N'йамекопоукос',
+					  N'2106855805',
+					  N'2106383288',
+					  N'6977939479',
+					  N'INFO@ADKANELLOPOULOS.EU',
+					  N'иппойяатоус 6-8, лаяоуси',
+					  N'',
+					  N'Doctor',
+					  N'8',
+					  N'5'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  24, 
+					  N'петяос д',
+					  N'циаммайобитгс',
+					  N'2310244144',
+					  N'',
+					  N'',
+					  N'',
+					  N'лгтя. цеммадиоу 6, хессакомийг',
+					  N'',
+					  N'Doctor',
+					  N'5',
+					  N'5'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  25, 
+					  N'дглос ',
+					  N'цидаягс',
+					  N'',
+					  N'2310730581',
+					  N'6947932194',
+					  N'',
+					  N'амх/цоу памтаф╪поуко 9а, алпек╪йгпои хессаком',
+					  N'',
+					  N'Doctor',
+					  N'5',
+					  N'4'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  26, 
+					  N'лаяиа',
+					  N'лемоумоу папабемтфг',
+					  N'',
+					  N'',
+					  N'',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Doctor',
+					  N'5',
+					  N'4'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  27, 
+					  N'асилгма',
+					  N'цаккг тсимопоукоу',
+					  N'23',
+					  N'2310267878',
+					  N'',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Doctor',
+					  N'4',
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Workphone, Mobile, Email, Address, Info, Discriminator, DoctorWorkplaceId, DoctorSpecialtyId) VALUES (
+					  29, 
+					  N'тсилтсики╒йос',
+					  N'амаст╒сиос',
+					  N'',
+					  N'2310324358',
+					  N'',
+					  N'',
+					  N' , ',
+					  N'',
+					  N'Doctor',
+					  N'9',
+					  N'4'
+					  );
+					  set IDENTITY_INSERT People OFF;
+
+set IDENTITY_INSERT People ON;
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  136, 
+					  N'памациытгс ',
+					  N'какос',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'25',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  109, 
+					  N'петяос',
+					  N'ежяаилидгс',
+					  N'2317001212',
+					  N'',
+					  N'',
+					  N'1900-01-01',
+					  N' , диабат╒',
+					  N'',
+					  N'Patient',
+					  N'14',
+					  N'14',
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  110, 
+					  N'акенамдяа',
+					  N'яоидг',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-01',
+					  N' , вакастяа',
+					  N'лех пеяиццемгтий╪ 10 гл╦яес,екажяа употом╨а (дем лпоусо╬кгсе), 14-15 лгм©м пеяп╒тгсе, паид╨атяос басике╨оу',
+					  N'Patient',
+					  N'13',
+					  N'13',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  111, 
+					  N'лгмас-лаяиос',
+					  N'цкемгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'2013-09-29',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'15',
+					  N'15',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  112, 
+					  N'памациытгс',
+					  N'жемтамидгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'1900-01-01',
+					  N'еяухяаиас  , тоулпа',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  113, 
+					  N'ахамасиос',
+					  N'аяцуяоудгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'2015-07-03',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'16',
+					  N'16',
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  114, 
+					  N'яажагк',
+					  N'мтамос лпотгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'2012-12-13',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'19',
+					  N'19',
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  115, 
+					  N'лекима',
+					  N'йиоуциоултфоцкоу',
+					  N'',
+					  N'',
+					  N'',
+					  N'1900-01-01',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'13',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  116, 
+					  N'йымстамтима',
+					  N'какавоу',
+					  N'',
+					  N'',
+					  N'',
+					  N'2008-08-20',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'17',
+					  N'17',
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  117, 
+					  N'памациытгс',
+					  N'памтекидгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'2011-08-09',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'17',
+					  N'17',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  118, 
+					  N'аийатеяимг',
+					  N'папаиыаммоу',
+					  N'',
+					  N'',
+					  N'',
+					  N'1900-01-01',
+					  N'ватфгвяистодоукоу  2, м.яусио',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'13',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  119, 
+					  N'абаптисто',
+					  N'тяужым',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'13',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  120, 
+					  N'яажагкиа',
+					  N'амастасиадоу',
+					  N'',
+					  N'',
+					  N'',
+					  N'1900-01-01',
+					  N'беяоиас 4, ',
+					  N'',
+					  N'Patient',
+					  N'20',
+					  N'20',
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  121, 
+					  N'абаптисто',
+					  N'цйоцйас',
+					  N'',
+					  N'',
+					  N'',
+					  N'2014-06-18',
+					  N'фаилг 24, тяиамдяиа',
+					  N'',
+					  N'Patient',
+					  N'21',
+					  N'21',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  122, 
+					  N'мий╪каос',
+					  N'калпяим╪с',
+					  N'',
+					  N'6956217706',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'13',
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  123, 
+					  N'ап╪стокос',
+					  N'ахамас╪поукос',
+					  N'',
+					  N'6977174157',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'17',
+					  null,
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  124, 
+					  N'мий╪кас диакевт╧',
+					  N'вык╨дгс',
+					  N'2396041931',
+					  N'6973345956',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'17',
+					  null,
+					  N'13'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  125, 
+					  N'памаци©тгс',
+					  N'покит╨дгс ',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'13'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  126, 
+					  N'йатея╨ма',
+					  N'сталпоукидоу',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  127, 
+					  N'йатеяима',
+					  N'естея',
+					  N'',
+					  N'6936149136',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'17',
+					  null,
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  128, 
+					  N'дглгтягс',
+					  N'вяистидгс',
+					  N'',
+					  N'6986168693',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'13',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  129, 
+					  N'лаяиа',
+					  N'йаяапипеяг',
+					  N'',
+					  N'6937421517',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'13',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  130, 
+					  N'йатеяима',
+					  N'пападяосоу',
+					  N'2310234429',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'23',
+					  N'13'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  131, 
+					  N'цеыяциос',
+					  N'цакамийас',
+					  N'',
+					  N'6980767213',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'13',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  132, 
+					  N'мийокаос',
+					  N'йактсос',
+					  N'',
+					  N'6972412492',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'17',
+					  N'13',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  133, 
+					  N'акенгс',
+					  N'иоямтамож',
+					  N'',
+					  N'6931259840',
+					  N'',
+					  N'1997-12-09',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'13',
+					  N'13'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  134, 
+					  N'аццекос пазсиос',
+					  N'йаялатфоцкоу',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  135, 
+					  N'вазл',
+					  N'цйатемио',
+					  N'2310341175',
+					  N'6944590721',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'13',
+					  N'13'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  137, 
+					  N'лаяиа',
+					  N'йоубекг',
+					  N'',
+					  N'6940518462',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'17',
+					  N'13',
+					  N'13'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  138, 
+					  N'ахамасиос',
+					  N'фыптос',
+					  N'',
+					  N'6972889421',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  139, 
+					  N'ахамасиос',
+					  N'суялатайгс',
+					  N'6947543429',
+					  N'6942901999',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  140, 
+					  N'ахамасиос',
+					  N'фажеияиоу',
+					  N'',
+					  N'6978876568',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'13'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  141, 
+					  N'мий╪каос',
+					  N'паукоудгс',
+					  N'6980408341',
+					  N'6946950518',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  142, 
+					  N'паукос',
+					  N'спYяидгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'13'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  144, 
+					  N'акенамдяос',
+					  N'аццекидгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'2014-01-06',
+					  N' , ',
+					  N'айо╧ жусиокоций╧, ╪яасг пеяиояисл╦мг-жоя╒еи цуаки╒, ецве╨ягсг амоийт╧с йаяди╒с,амаптуниокоцос тсийоукас, сумдяоло NOONINS ',
+					  N'Patient',
+					  N'26',
+					  N'27',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  146, 
+					  N'цеыяциос',
+					  N'лпаияалгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  147, 
+					  N'LLUPA',
+					  N'SELINA',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , йоядеки╪',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  148, 
+					  N'луят©',
+					  N'йаяалам©кг',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N'вя╧стоу я╒птг 34, хес/йг',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  149, 
+					  N'сеяаже╨л - л╒яиос',
+					  N'тситсилп╧с',
+					  N'2310672412',
+					  N'6973096434',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  151, 
+					  N'ак╦намдяос ',
+					  N'амастас╪поукос',
+					  N'2310944774',
+					  N'6906629858',
+					  N'',
+					  N'2012-07-05',
+					  N' , ваяик╒оу',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  152, 
+					  N'яажагк',
+					  N'местояоудгс',
+					  N'2310330261',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , пукаиа',
+					  N'',
+					  N'Patient',
+					  N'17',
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  153, 
+					  N'бибиам',
+					  N'тяаийоу',
+					  N'6977740730',
+					  N'6977435143',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  155, 
+					  N'паяасйеуг',
+					  N'йаяахамоу',
+					  N'2310445861',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  156, 
+					  N'абаптисто',
+					  N'ватфгбасикеиадгс',
+					  N'2310307785',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'28',
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  157, 
+					  N'коу╨фа',
+					  N'цабяигк╨доу',
+					  N'',
+					  N'6973884288',
+					  N'',
+					  N'2016-01-06',
+					  N' , пука╨а',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'13'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  158, 
+					  N'ахгма',
+					  N'боуктсиоу',
+					  N'2392066468',
+					  N'6977689210',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'13',
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  159, 
+					  N'хе╪дыяос ',
+					  N'циояо╬дгс',
+					  N'',
+					  N'6977408844',
+					  N'',
+					  N'2016-05-05',
+					  N' , ',
+					  N'пя╪ыяос 27 ебдол╒дым, мосгке╨а сто иппойя╒теио ╦нодос ап╪ то мосойоле╨о 15/8/2016',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  160, 
+					  N'екемг',
+					  N'йаяокидоу',
+					  N'',
+					  N'6973994560',
+					  N'',
+					  N'2016-01-01',
+					  N' , йикйис',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  161, 
+					  N'с╪кым ',
+					  N'л╪сиос',
+					  N'',
+					  N'',
+					  N'',
+					  N'2001-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  162, 
+					  N'памаци©тгс ',
+					  N'аяаб╨дгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , асбестов©яи',
+					  N'',
+					  N'Patient',
+					  N'17',
+					  null,
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  164, 
+					  N'лаяиа',
+					  N'сталпокидоу',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'13',
+					  N'13',
+					  N'14'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  165, 
+					  N'исл╧мг ',
+					  N'йатс╒яйа',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-01',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  166, 
+					  N'дгл╧тягс (D)',
+					  N'Xояти╒тг',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  167, 
+					  N'цеыяц╨а',
+					  N'пауко╬дг',
+					  N'',
+					  N'6982368843',
+					  N'',
+					  N'1998-01-06',
+					  N' , йаяд╨а',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  168, 
+					  N'хыл╒с',
+					  N'йаяалам╨дгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'28',
+					  N'28',
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  171, 
+					  N'екеухеяиа',
+					  N'касйопоукоу',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  172, 
+					  N'циыяцос',
+					  N'ауцеяимос',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  173, 
+					  N'хыл╒с ',
+					  N'ко╬йояос',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  174, 
+					  N'йымстамтимос',
+					  N'пауйидгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'2010-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'17',
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  175, 
+					  N'дглгтягс',
+					  N'йоуйоукейидгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  176, 
+					  N'стауяос',
+					  N'йоустяабас',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  143, 
+					  N'басикийг',
+					  N'тоятопидоу',
+					  N'6948822197',
+					  N'6937241231',
+					  N'',
+					  N'2016-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'17',
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  154, 
+					  N'иыаммгс',
+					  N'амастасиадгс',
+					  N'',
+					  N'',
+					  N'',
+					  N'2016-01-06',
+					  N' , ваяикаоу',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  N'12'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  169, 
+					  N'амастас╨а',
+					  N'цйатф©мг ',
+					  N'',
+					  N'',
+					  N'',
+					  N'2006-01-06',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  N'28',
+					  N'28',
+					  N'13'
+					  );
+INSERT INTO People (Id, Name, Surname, Telephone, Mobile, Email, Birthdate, Address, Info, Discriminator, CurrentDoctorId, ReferrerDoctorId, InsuranceId) VALUES (
+					  170, 
+					  N'жамоуяиа',
+					  N'лоустайа',
+					  N'',
+					  N'',
+					  N'',
+					  N'1900-01-01',
+					  N' , ',
+					  N'',
+					  N'Patient',
+					  null,
+					  null,
+					  null
+					  );
+set IDENTITY_INSERT People OFF;
