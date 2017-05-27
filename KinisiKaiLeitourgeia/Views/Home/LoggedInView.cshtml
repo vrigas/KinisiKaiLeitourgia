@@ -1,12 +1,11 @@
 ﻿@model IEnumerable<KinisiKaiLeitourgeia.Models.People.Person>
+@using Kendo.Mvc.UI
 @{
     ViewBag.Title = "LoggedInView";
 }
-
 <h2>Ολοι οι ανθρωποι</h2>
-
+@(Html.Kendo().DatePicker().Name("datepicker"))
 @foreach (var p in Model)
 {
     <h1>@p.FullName</h1>
 }
-
