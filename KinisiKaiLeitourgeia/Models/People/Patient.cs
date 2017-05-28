@@ -1,4 +1,5 @@
-﻿using KinisiKaiLeitourgeia.Models.Dictionaries;
+﻿using KinisiKaiLeitourgeia.Models.Appointments;
+using KinisiKaiLeitourgeia.Models.Dictionaries;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -29,6 +30,8 @@ namespace KinisiKaiLeitourgeia.Models.People
         public Insurance Insurance { get; set; }
 
         public IEnumerable<Parent> Parent { get; set; }
+
+        public IEnumerable<Appointment> Appointments { get; set; }
 
     }
 }

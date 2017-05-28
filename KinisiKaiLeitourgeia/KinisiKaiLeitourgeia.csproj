@@ -273,6 +273,34 @@
     <Compile Include="Migrations\201705271615122_AppointmentSetup.Designer.cs">
       <DependentUpon>201705271615122_AppointmentSetup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705271751379_AppointmentRemoveNavigation.cs" />
+    <Compile Include="Migrations\201705271751379_AppointmentRemoveNavigation.Designer.cs">
+      <DependentUpon>201705271751379_AppointmentRemoveNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705280907423_AppointmentPatientRelationship.cs" />
+    <Compile Include="Migrations\201705280907423_AppointmentPatientRelationship.Designer.cs">
+      <DependentUpon>201705280907423_AppointmentPatientRelationship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705280933422_BackToEventPatientId.cs" />
+    <Compile Include="Migrations\201705280933422_BackToEventPatientId.Designer.cs">
+      <DependentUpon>201705280933422_BackToEventPatientId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705281136321_testDefaultEvent.cs" />
+    <Compile Include="Migrations\201705281136321_testDefaultEvent.Designer.cs">
+      <DependentUpon>201705281136321_testDefaultEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705281145085_RevertAppointment.cs" />
+    <Compile Include="Migrations\201705281145085_RevertAppointment.Designer.cs">
+      <DependentUpon>201705281145085_RevertAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705281234158_AppointmentForeignKeys.cs" />
+    <Compile Include="Migrations\201705281234158_AppointmentForeignKeys.Designer.cs">
+      <DependentUpon>201705281234158_AppointmentForeignKeys.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705281234561_AddAppointmentPlace.cs" />
+    <Compile Include="Migrations\201705281234561_AddAppointmentPlace.Designer.cs">
+      <DependentUpon>201705281234561_AddAppointmentPlace.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Appointments\Appointment.cs" />
@@ -290,6 +318,7 @@
     <Compile Include="Models\People\Therapist.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\SchedulerViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-lumen.css" />
@@ -1352,6 +1381,11 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\EditorTemplates\AppointmentTemplate.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\LoggedInView.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1363,9 +1397,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -1386,7 +1417,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\LoggedInView.cshtml" />
     <Content Include="Views\Therapists\Create.cshtml" />
     <Content Include="Views\Therapists\Delete.cshtml" />
     <Content Include="Views\Therapists\Details.cshtml" />
@@ -2072,6 +2102,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705271615122_AppointmentSetup.resx">
       <DependentUpon>201705271615122_AppointmentSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705271751379_AppointmentRemoveNavigation.resx">
+      <DependentUpon>201705271751379_AppointmentRemoveNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705280907423_AppointmentPatientRelationship.resx">
+      <DependentUpon>201705280907423_AppointmentPatientRelationship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705280933422_BackToEventPatientId.resx">
+      <DependentUpon>201705280933422_BackToEventPatientId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705281136321_testDefaultEvent.resx">
+      <DependentUpon>201705281136321_testDefaultEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705281145085_RevertAppointment.resx">
+      <DependentUpon>201705281145085_RevertAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705281234158_AppointmentForeignKeys.resx">
+      <DependentUpon>201705281234158_AppointmentForeignKeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705281234561_AddAppointmentPlace.resx">
+      <DependentUpon>201705281234561_AddAppointmentPlace.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

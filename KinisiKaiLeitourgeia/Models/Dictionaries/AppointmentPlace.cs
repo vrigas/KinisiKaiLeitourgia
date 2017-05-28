@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KinisiKaiLeitourgeia.Models.Appointments;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -14,5 +15,7 @@ namespace KinisiKaiLeitourgeia.Models.Dictionaries
         [StringLength(50)]
         [Display(Name = "Μέρος Ραντεβού")]
         public string Name { get; set; }
+
+        public IEnumerable<Appointment> Appointments { get; set; }
     }
 }

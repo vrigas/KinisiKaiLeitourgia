@@ -15,7 +15,8 @@ namespace KinisiKaiLeitourgeia.Models.Appointments
         public int TaskID { get; set; }
 
         [Display(Name = "Τίτλος")]
-        public string Title { get; set; }
+        public string Title { get;
+            set; }
 
         [Display(Name = "Περιγραφή")]
         public string Description { get; set; }
@@ -28,7 +29,7 @@ namespace KinisiKaiLeitourgeia.Models.Appointments
 
         [Display(Name = "Έως")]
         public DateTime End { get; set; }
-        
+
         [Display(Name = "Ασθενής")]
         public int PatientId { get; set; }
 
@@ -40,7 +41,7 @@ namespace KinisiKaiLeitourgeia.Models.Appointments
         public Therapist Therapist { get; set; }
 
         [Display(Name = "Μέρος Ραντεβού")]
-        public int AppointmentPlaceId { get; set; }
+        public byte AppointmentPlaceId { get; set; }
 
         public AppointmentPlace AppointmentPlace { get; set; }
 

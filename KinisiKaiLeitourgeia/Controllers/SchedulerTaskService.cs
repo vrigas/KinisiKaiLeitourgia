@@ -8,6 +8,7 @@ using System.Web;
 using KinisiKaiLeitourgeia.Models.Appointments;
 using KinisiKaiLeitourgeia.Models;
 using System.Data.Entity;
+using System.Data.Entity.Infrastructure;
 
 namespace KinisiKaiLeitourgeia.Controllers
 {
@@ -39,19 +40,23 @@ namespace KinisiKaiLeitourgeia.Controllers
 
             if (result == null || UpdateDatabase)
             {
-                result = db.Appointments.ToList().Select(task => new Appointment
-                {
-                    TaskID = task.TaskID,
-                    Title = task.Title,
-                    Start = DateTime.SpecifyKind(task.Start, DateTimeKind.Utc),
-                    End = DateTime.SpecifyKind(task.End, DateTimeKind.Utc),
-                    StartTimezone = task.StartTimezone,
-                    EndTimezone = task.EndTimezone,
-                    Description = task.Description,
-                    IsAllDay = task.IsAllDay,
-                    RecurrenceRule = task.RecurrenceRule,
-                    RecurrenceException = task.RecurrenceException
-                }).ToList();
+                result = db.Appointments
+                    .ToList().Select(task => new Appointment
+                    {
+                        TaskID = task.TaskID,
+                        Title = task.Title,
+                        Start = DateTime.SpecifyKind(task.Start, DateTimeKind.Utc),
+                        End = DateTime.SpecifyKind(task.End, DateTimeKind.Utc),
+                        StartTimezone = task.StartTimezone,
+                        EndTimezone = task.EndTimezone,
+                        Description = task.Description,
+                        IsAllDay = task.IsAllDay,
+                        RecurrenceRule = task.RecurrenceRule,
+                        RecurrenceException = task.RecurrenceException,
+                        //AppointmentPlaceId = task.AppointmentPlaceId,
+                        //TherapistId = task.TherapistId,
+                        //PatientId = task.PatientId
+                    }).ToList();
 
                 if (!IsWebApiRequest)
                 {
@@ -81,7 +86,8 @@ namespace KinisiKaiLeitourgeia.Controllers
                     {
                         task.Title = "";
                     }
-
+                    //task.Title = db.Patients.Find(task.PatientId).FullName + " - " + db.Therapists.Find(task.TherapistId).Surname;
+                    //task.Balance = task.Price;
                     var entity = task;
 
                     db.Appointments.Add(entity);
@@ -119,10 +125,8 @@ namespace KinisiKaiLeitourgeia.Controllers
                     {
                         task.Title = "";
                     }
-
-                    var entity = task;
-                    db.Appointments.Attach(entity);
-                    db.Entry(entity).State = EntityState.Modified;
+                    db.Appointments.Attach(task);
+                    db.Entry(task).State = EntityState.Modified;
                     db.SaveChanges();
                 }
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KinisiKaiLeitourgeia.Models.Appointments;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Drawing;
@@ -18,5 +19,7 @@ namespace KinisiKaiLeitourgeia.Models.People
 
         [Display(Name = "Χρώμα Ραντεβού")]
         public Color color { get; set; }
+
+        public IEnumerable<Appointment> Appointments { get; set; }
     }
 }

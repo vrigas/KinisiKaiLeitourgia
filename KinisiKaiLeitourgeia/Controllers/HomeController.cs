@@ -1,4 +1,5 @@
 ﻿using KinisiKaiLeitourgeia.Models;
+using KinisiKaiLeitourgeia.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,8 +21,13 @@ namespace KinisiKaiLeitourgeia.Controllers
         {
             if (User.Identity.IsAuthenticated)
             {
-                var people = _context.People.ToList();
-                return View("LoggedInView", people);
+                var schedulerViewModel = new SchedulerViewModel()
+                {
+                    AppointmentPlaces = _context.AppointmentPlaces.ToList(),
+                    Patients = _context.Patients.ToList(),
+                    Therapists = _context.Therapists.ToList()
+                };
+                return View("LoggedInView", schedulerViewModel);
             }
             return View();
         }

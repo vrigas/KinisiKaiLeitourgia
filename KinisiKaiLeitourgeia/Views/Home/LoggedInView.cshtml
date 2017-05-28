@@ -1,4 +1,4 @@
-﻿@model IEnumerable<KinisiKaiLeitourgeia.Models.People.Person>
+﻿@model KinisiKaiLeitourgeia.ViewModels.SchedulerViewModel
 @using Kendo.Mvc.UI
 @{
     ViewBag.Title = "Αρχική";
@@ -7,20 +7,45 @@
 @(Html.Kendo().Scheduler<KinisiKaiLeitourgeia.Models.Appointments.Appointment>()
     .Name("scheduler")
     .Date(DateTime.Today)
-    .StartTime(DateTime.Today)
-    .Height(600)
+    .StartTime(DateTime.Today.AddHours(8))
+    .EndTime(DateTime.Today.AddDays(1).AddHours(-4))
+    .MajorTick(60)
     .Views(views =>
     {
-        views.DayView();
         views.WeekView();
+        views.DayView();
     })
+    .Resources(resource =>
+    {
+        resource.Add(m => m.AppointmentPlaceId)
+            .Title("Μέρος")
+            .DataTextField("Name")
+            .DataValueField("Id")
+            .BindTo(Model.AppointmentPlaces);
+
+        resource.Add(m => m.PatientId)
+            .Title("Ασθενής")
+            .DataTextField("FullName")
+            .DataValueField("Id")
+            .BindTo(Model.Patients);
+
+        resource.Add(m => m.TherapistId)
+            .Title("Θεραευτής")
+            .DataTextField("FullName")
+            .DataValueField("Id")
+            .BindTo(Model.Therapists);
+
+    })
+    .Editable(edit => edit.TemplateName("AppointmentTemplate"))
     .DataSource(d => d
         .WebApi()
         .Model(m =>
         {
             m.Id(f => f.TaskID);
             m.Field(f => f.Title).DefaultValue("No title");
-            m.Field(f => f.Title).DefaultValue("No title");
+            m.Field("Price", typeof(decimal));
+            m.Field(f => f.Balance);
+
         })
         .Events(events => events.Error("error_handler"))
         .Read(read => read.Url(Url.HttpRouteUrl("DefaultApi", new { controller = "Scheduler" })))
@@ -34,11 +59,7 @@
 {
     <script>
         function error_handler(e) {
-            var errors = $.parseJSON(e.xhr.responseText);
-
-            if (errors) {
-                alert("Errors:\n" + errors.join("\n"));
-            }
+            
         }
-</script>
+    </script>   
 }
