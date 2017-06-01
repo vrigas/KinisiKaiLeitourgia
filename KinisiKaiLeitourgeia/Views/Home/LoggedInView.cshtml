@@ -8,33 +8,12 @@
     .Name("scheduler")
     .Date(DateTime.Today)
     .StartTime(DateTime.Today.AddHours(8))
-    .EndTime(DateTime.Today.AddDays(1).AddHours(-4))
+    .EndTime(23,0,0)
     .MajorTick(60)
     .Views(views =>
     {
         views.WeekView();
         views.DayView();
-    })
-    .Resources(resource =>
-    {
-        resource.Add(m => m.AppointmentPlaceId)
-            .Title("Μέρος")
-            .DataTextField("Name")
-            .DataValueField("Id")
-            .BindTo(Model.AppointmentPlaces);
-
-        resource.Add(m => m.PatientId)
-            .Title("Ασθενής")
-            .DataTextField("FullName")
-            .DataValueField("Id")
-            .BindTo(Model.Patients);
-
-        resource.Add(m => m.TherapistId)
-            .Title("Θεραευτής")
-            .DataTextField("FullName")
-            .DataValueField("Id")
-            .BindTo(Model.Therapists);
-
     })
     .Editable(edit => edit.TemplateName("AppointmentTemplate"))
     .DataSource(d => d
@@ -59,7 +38,7 @@
 {
     <script>
         function error_handler(e) {
-            
+            alert(e);
         }
     </script>   
 }

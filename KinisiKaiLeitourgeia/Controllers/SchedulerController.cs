@@ -56,8 +56,13 @@ namespace KinisiKaiLeitourgeia.Controllers
         // PUT api/task/5
         public HttpResponseMessage Put(int id, Appointment task)
         {
-            if (ModelState.IsValid && id == task.TaskID)
-            {
+            task.AppointmentPlace = null;
+            task.Therapist = null;
+            task.Patient = null;
+            task.TypeAppointment = null;
+            //if (ModelState.IsValid && id == task.TaskID)
+           if (id == task.TaskID)
+                {
                 try
                 {
                     service.Update(task, null);

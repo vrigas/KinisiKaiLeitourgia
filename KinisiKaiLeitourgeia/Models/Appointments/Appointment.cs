@@ -45,6 +45,11 @@ namespace KinisiKaiLeitourgeia.Models.Appointments
 
         public AppointmentPlace AppointmentPlace { get; set; }
 
+        [Display(Name = "Είδος Ραντεβού")]
+        public byte TypeAppointmentId { get; set; }
+
+        public TypeAppointment TypeAppointment { get; set; }
+
         [Display(Name = "Τιμή")]
         public decimal Price { get; set; }
 
@@ -55,7 +60,6 @@ namespace KinisiKaiLeitourgeia.Models.Appointments
         public string EndTimezone { get; set; }
         public string RecurrenceRule { get; set; }
         public string RecurrenceException { get; set; }
-
 
     }
 }

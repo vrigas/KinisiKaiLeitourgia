@@ -205,6 +205,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PeopleControllers\PatientsAPIController.cs" />
     <Compile Include="Controllers\PeopleControllers\DoctorsController.cs" />
     <Compile Include="Controllers\PeopleControllers\PatientsController.cs" />
     <Compile Include="Controllers\PeopleControllers\TherapistsController.cs" />
@@ -300,6 +301,10 @@
     <Compile Include="Migrations\201705281234561_AddAppointmentPlace.cs" />
     <Compile Include="Migrations\201705281234561_AddAppointmentPlace.Designer.cs">
       <DependentUpon>201705281234561_AddAppointmentPlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705281359153_TypeAppointment.cs" />
+    <Compile Include="Migrations\201705281359153_TypeAppointment.Designer.cs">
+      <DependentUpon>201705281359153_TypeAppointment.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -2123,6 +2128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705281234561_AddAppointmentPlace.resx">
       <DependentUpon>201705281234561_AddAppointmentPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705281359153_TypeAppointment.resx">
+      <DependentUpon>201705281359153_TypeAppointment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -53,9 +53,12 @@ namespace KinisiKaiLeitourgeia.Controllers
                         IsAllDay = task.IsAllDay,
                         RecurrenceRule = task.RecurrenceRule,
                         RecurrenceException = task.RecurrenceException,
-                        //AppointmentPlaceId = task.AppointmentPlaceId,
-                        //TherapistId = task.TherapistId,
-                        //PatientId = task.PatientId
+                        AppointmentPlaceId = task.AppointmentPlaceId,
+                        TherapistId = task.TherapistId,
+                        PatientId = task.PatientId,
+                        Price = task.Price,
+                        Balance = task.Balance,
+                        TypeAppointmentId = task.TypeAppointmentId
                     }).ToList();
 
                 if (!IsWebApiRequest)
@@ -86,13 +89,12 @@ namespace KinisiKaiLeitourgeia.Controllers
                     {
                         task.Title = "";
                     }
-                    //task.Title = db.Patients.Find(task.PatientId).FullName + " - " + db.Therapists.Find(task.TherapistId).Surname;
-                    //task.Balance = task.Price;
+                    task.Title = db.Patients.Find(task.PatientId).FullName + " - " + db.Therapists.Find(task.TherapistId).Surname;
+                    task.Balance = task.Price;
                     var entity = task;
 
                     db.Appointments.Add(entity);
                     db.SaveChanges();
-
                     task.TaskID = entity.TaskID;
                 }
             }
@@ -117,6 +119,10 @@ namespace KinisiKaiLeitourgeia.Controllers
                         target.IsAllDay = task.IsAllDay;
                         target.RecurrenceRule = task.RecurrenceRule;
                         target.RecurrenceException = task.RecurrenceException;
+                        target.TherapistId = task.TherapistId;
+                        target.PatientId = task.PatientId;
+                        target.AppointmentPlaceId = task.AppointmentPlaceId;
+                        
                     }
                 }
                 else
